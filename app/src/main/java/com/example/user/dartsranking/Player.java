@@ -6,42 +6,42 @@ package com.example.user.dartsranking;
 
 public class Player {
 
-    private String name;
-    private String nickname;
-    private int currentRanking;
+    private String mName;
+    private String mNickname;
+    private int mCurrentRanking;
 
     public Player(String name, String nickname, int currentRanking) {
-        this.name = name;
-        this.nickname = nickname;
-        this.currentRanking = currentRanking;
+        this.mName = name;
+        this.mNickname = nickname;
+        this.mCurrentRanking = currentRanking;
     }
 
     public String getName() {
-        return this.name;
+        return mName;
     }
 
     public void setName(String name) {
-        this.name = name;
+        mName = name;
     }
 
     public String getNickname() {
-        return this.nickname;
+        return mNickname;
     }
 
     public void setNickname(String nickname) {
-        this.nickname = nickname;
+        mNickname = nickname;
     }
 
     public int getCurrentRanking() {
-        return this.currentRanking;
+        return mCurrentRanking;
     }
 
     public void setCurrentRanking(int updatedRanking) {
-        this.currentRanking = updatedRanking;
+        mCurrentRanking = updatedRanking;
     }
 
     @Override
     public String toString() {
-        return "Name: " + this.name + ", Nickname: " + this.nickname + ", Ranking: " + this.currentRanking;
+        return "Name: " + mName + ", Nickname: " + mNickname + ", Ranking: " + mCurrentRanking;
     }
 }
